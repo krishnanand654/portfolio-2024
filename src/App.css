@@ -1,0 +1,115 @@
+.splash-ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.name {
+  color: white;
+}
+
+.main-ctn {
+  position: relative; /* Set position to relative */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.main-ctn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.351); /* Adjust opacity here */
+}
+
+.side-bar ul {
+  list-style: none;
+  padding: 30px;
+}
+
+.side-bar {
+  width: 200px;
+  height: 100%;
+  border-right: 2px solid rgba(255, 255, 255, 0.125);
+}
+
+.side-bar ul li {
+  margin-bottom: 6px;
+  color: rgb(168, 168, 168);
+  font-weight: 400;
+  padding: 10px;
+  /* backdrop-filter: blur(17px) saturate(75%);
+  -webkit-backdrop-filter: blur(17px) saturate(75%);
+  background-color: rgba(163, 163, 163, 0.11);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.125); */
+}
+
+.side-bar ul li:hover {
+  color: white;
+  cursor: pointer;
+  transform: scale(98%);
+  transition: 0.25s ease-in-out;
+}
+
+.card-glass,
+.card-game-glass {
+  height: 70%;
+  width: 57%;
+  backdrop-filter: blur(20px) saturate(75%);
+  -webkit-backdrop-filter: blur(20px) saturate(75%);
+  background-color: rgba(163, 163, 163, 0.167);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.288);
+  transition: transform 0.5s ease-in-out; /* Add transition for smooth movement */
+}
+
+/* Add hover effect for example */
+
+.card-game-glass:hover {
+  transform: translateY(-10px); /* Move the card upwards on hover */
+}
+.card-game-glass {
+  border-radius: 20px;
+  width: 200px;
+  height: 45vh;
+  padding: 20px;
+  margin-left: 20px;
+  transform: perspective(1000px) rotateY(-20deg);
+}
+
+.ant-tabs-tab:first-child {
+  margin: 50px 30px 0 !important;
+}
+
+.ant-tabs-tab {
+  margin: 10px 30px 0 !important;
+}
+
+.fade-in-text {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

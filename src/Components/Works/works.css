@@ -1,0 +1,77 @@
+.banner1 {
+  width: auto;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: contain;
+}
+
+.banner-ctn {
+  padding: 20px 0 170px;
+  width: auto;
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.banner-row {
+  padding: 10px 0 80px;
+  width: auto;
+  height: 150px;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+.g-name {
+  font-weight: 500;
+}
+
+.g-sub {
+  font-size: 12px;
+  color: rgb(228, 228, 228);
+}
+
+.captions {
+  color: white;
+  margin-left: 10px;
+}
+
+.captions h3 {
+  font-weight: 400;
+}
+.captions p {
+  color: rgb(220, 220, 220);
+}
+
+.banner2 {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.github-card-glass {
+  height: 70px;
+  width: 180px;
+  backdrop-filter: blur(10px) saturate(75%);
+  -webkit-backdrop-filter: blur(10px) saturate(75%);
+  background-color: rgba(163, 163, 163, 0.167);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.288);
+  transition: transform 0.5s ease-in-out; /* Add transition for smooth movement */
+  padding: 10px;
+  color: white;
+}
+
+.github-ctn {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
