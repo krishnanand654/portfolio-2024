@@ -5,7 +5,7 @@ const Splash = () => {
         <Fade>
             <div className="fade-in-image s">
                 <video width="400" height="400" muted autoPlay>
-                    <source src="face4.mp4" type="video/mp4" />
+                    <source src="face1.mp4" type="video/mp4" />
                 </video>
             </div>
         </Fade>
