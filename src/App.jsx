@@ -32,7 +32,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setSplash(false);
-    }, 500);
+    }, 3000);
   }, []);
 
   // Function to handle tab change
