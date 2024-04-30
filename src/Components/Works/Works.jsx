@@ -54,7 +54,7 @@ const Works = () => {
 
                 {data && data.map((e) => {
                     return (<>
-                        <a href={e.html_url} target="_blank">
+                        <a href={e.html_url} target="_blank" style={{ textDecoration: 'none' }}>
                             <div className='github-card-glass'>
                                 <h4 className='g-name'>{e.name}</h4>
                                 <p className='g-sub'>{e.language}</p>
